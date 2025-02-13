@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="card">
+            <img src="img/foto.jpg" alt="Foto de perfil" class="profile-img">
+            <h1>Sobre mí</h1>
+            <p>Hola, me llamo Sandro Ramírez Carrillo soy estudiante de TSU en TI, área Desarrollo de Software Multiplataforma, con planes de continuar en Ingeniería. Apasionado por la programación y el aprendizaje continuo, con experiencia en PHP, JavaScript, MySQL, PostgreSQL, Bootstrap y APIs. Especializado en desarrollo web, busco oportunidades para aplicar habilidades y crecer profesionalmente.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/dash._.xl" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Dashxl" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dscp-sandro-ramirez/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/523231025480" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h1 class="projects-section2">Mis Proyectos</h1>
+        <div class="projects-container">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <h2>BlueSense</h2>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="img/Blue1.png" alt="Proyecto 1 - Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Blue2.png" alt="Proyecto 1 - Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Blue3.png" alt="Proyecto 1 - Imagen 3">
+                        </div>
+                    </div>
+                </div>
+                <h3>Reconocimiento con mención honorífica por el Mejor Proyecto Desarrollado por Visión</h3>
+                <p class="project-description">
+                    Desarrollamos un prototipo llamado BlueSense con un enfoque en impacto social, diseñado para ayudar a comunidades afectadas por la contaminación del agua, especialmente en ríos. Utilizamos PHP, CSS, Bootstrap, FontAwesome y SweetAlert2. Trabajé en equipo bajo presión, resolviendo problemas en tiempo real.
+
+Este proyecto fue desarrollado durante el [REDACTED] Hackathon | Mexico Node by Hackbox, un evento a nivel estatal.
+                </p>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <h2>Ramirez Plaza</h2>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="img/Ram1.png" alt="Proyecto 2 - Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Ram2.png" alt="Proyecto 2 - Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Ram3.png" alt="Proyecto 2 - Imagen 3">
+                        </div>
+                    </div>
+                </div>
+                <h3>Proyecto de la materia de integradora</h3>
+                <p class="project-description">
+                    Fue un proyecto en el que debíamos buscar un negocio para desarrollar una aplicación o página web. En mi caso, creé una aplicación web para el negocio de un familiar. En este proyecto, apliqué todos los conocimientos adquiridos en los cuatrimestres anteriores.
+                </p>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <h2>WeatherView</h2>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="img/W1.png" alt="Proyecto 3 - Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/W2.png" alt="Proyecto 3 - Imagen 2">
+                        </div>
+                    </div>
+                </div>
+                <h3>Proyecto de la materia de Aplicaciones Web Orientadas a Servicios</h3>
+                <p class="project-description">
+                    Este proyecto fue desarrollado para la materia de Aplicaciones Web Orientadas a Servicios, donde implementamos diferentes APIs en una aplicación web. En mi caso, utilicé la API de inicio de sesión de Google, la API del clima OpenWeatherMap y la API de mapas Leaflet.
+
+Mi proyecto consiste en una aplicación web de clima en tiempo real, donde los usuarios pueden buscar cualquier ciudad en el mapa para ver su clima actual y también iniciar sesión con Google.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h1>Contacto</h1>
+        <form action="https://formspree.io/f/mjkgepwb" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
